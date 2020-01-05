@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <script>
+    var host = "firewall.netpatch.co";
+    if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+          window.location = window.location.toString().replace(/^http:/, "https:");
+    }
+    </script>
+    
+      
+        <title>Rules - NetPatch Firewall</title>
+      
+      
+      
+        <link rel="canonical" href="https://firewall.netpatch.co/rules/">
+      
+      
+        <meta name="author" content="NetPatch Lab">
+      
+    
+    <meta property="og:url" content="https://firewall.netpatch.co/rules/">
+    <meta property="og:title" content="NetPatch Firewall">
+    <meta property="og:image" content="https://firewall.netpatch.co/rules//../images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="NetPatch Firewall">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../images/logo.png">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-cyan palette-accent-orange">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Rules
+      </div>
+    </div>
+    
+      
+      <div class="button button-twitter" role="button" aria-label="Twitter">
+        <a href="https://twitter.com/netpatchco" title="@netpatchco on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+      </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/netpatch" title="@netpatch on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>
+          NetPatch Firewall
+          <span class="version">
+            v0.14
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Rules" href="./">
+      Rules
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="How does NetPatch firewall work?" href="#how-does-netpatch-firewall-work">
+                How does NetPatch firewall work?
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="IP Group" href="#ip-group">
+                IP Group
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Domain Group" href="#domain-group">
+                Domain Group
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Default Rule" href="#default-rule">
+                Default Rule
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Group Url scheme" href="#group-url-scheme">
+                Group Url scheme
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="IP/Domain Groups for Netpatch Firewall" href="#ipdomain-groups-for-netpatch-firewall">
+                IP/Domain Groups for Netpatch Firewall
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Questions" href="../questions/">
+      Questions
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Privacy Policy" href="../policy/">
+      Privacy Policy
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+              
+              <li>
+                <a href="https://twitter.com/netpatchco" target="_blank" title="@netpatchco on Twitter">
+                  @netpatchco on Twitter
+                </a>
+              </li>
+            
+            
+              
+              <li>
+                <a href="https://github.com/netpatch" target="_blank" title="@netpatch on GitHub">
+                  @netpatch on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <style>
+p{
+overflow-x: hidden;
+}
+</style>
+
+<h1 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">#</a></h1>
+<h2 id="how-does-netpatch-firewall-work">How does NetPatch firewall work?<a class="headerlink" href="#how-does-netpatch-firewall-work" title="Permanent link">#</a></h2>
+<p><img alt="How NetPatch Firewall works?" src="../images/rules_work.png" /></p>
+<h2 id="ip-group">IP Group<a class="headerlink" href="#ip-group" title="Permanent link">#</a></h2>
+<p>IP Group is one group of IP/Network address. It's just one line-based text file, one line is a <strong>IP address</strong> or <strong>Network address</strong>. Like below:</p>
+<blockquote>
+<p>127.0.0.0/8<br />
+    10.0.0.0/8<br />
+    172.16.0.0/12<br />
+    192.168.0.0/16<br />
+    155.6.78.1  </p>
+</blockquote>
+<p>e.g.:<br />
+<strong>8.8.8.8</strong> match one IP 8.8.8.8, <br />
+<strong>10.0.0.0/8</strong> match network 10.*.*.*</p>
+<p>You can Create any number of IP groups, it can be <strong>local</strong> or <strong>remote</strong> via url.<br />
+Each IP Group can be set to <strong>direct, block, proxy or disabled</strong> rule.<br />
+Each Group has a <strong>Priority</strong>, The higher the priority, the earlier match.</p>
+<h2 id="domain-group">Domain Group<a class="headerlink" href="#domain-group" title="Permanent link">#</a></h2>
+<p>Domain Group is one group of domain name. It's just one line-based text file, one line is a <strong>domain name</strong> or <strong>root domain name</strong>. Like below:</p>
+<blockquote>
+<p>one.domain.com<br />
+    .oneroot.com<br />
+    aaaaaa.net<br />
+    bbbbbb.net<br />
+    .ccccc.a.co  </p>
+</blockquote>
+<p>e.g.:<br />
+<strong>a.b.com</strong> matches a.b.com exactly,<br />
+<strong>.b.com</strong> matches b.com and *.b.com(e.g., a.b.com, c.a.b.com)</p>
+<p>You can Create any number of domain groups, it can be <strong>local</strong> or <strong>remote</strong> via url. <br />
+Each Domain Group can be set to <strong>direct, block, proxy or disabled</strong> rule.<br />
+Each Group has a <strong>Priority</strong>, The higher the priority, the earlier match.<br />
+<em>Hosts file</em> is also accepted, 127.0.0.1/0.0.0.0 in hosts file is ignored.</p>
+<h2 id="default-rule">Default Rule<a class="headerlink" href="#default-rule" title="Permanent link">#</a></h2>
+<p>If no IP Group or Domain Group match, the default rule is used.<br />
+It can be set to <strong>direct, block, proxy</strong>.  </p>
+<h2 id="group-url-scheme">Group Url scheme<a class="headerlink" href="#group-url-scheme" title="Permanent link">#</a></h2>
+<pre class="code"><code>netpatch://firewall/list?name=*name*&amp;type=*type*&amp;rule=*rule*&amp;url=*group_url*</code></pre>
+
+
+<p><em>type</em>: ip, domain<br />
+<em>rule</em>: direct, block, proxy</p>
+<p>The following examples, one is a IP Group url, the other is a Domain Group url.</p>
+<pre class="code"><code>netpatch://firewall/list?name=United%20States&amp;type=ip&amp;rule=proxy&amp;url=https%3A//example.com/ips/US.txt
+netpatch://firewall/list?name=Blocks%20domains&amp;type=domain&amp;rule=block&amp;url=https%3A//example.org/blocks.txt  </code></pre>
+
+
+<p>NetPatch Firewall will handle those links on devices with NetPatch Firewall installed.  </p>
+<p>e.g. Click link below, NetPatch Firewall will open it:   </p>
+<p><a href="netpatch://firewall/list?name=Example&amp;type=domain&amp;rule=block&amp;url=https%3A//firewall.netpatch.co/domain/example.txt">netpatch://firewall/list?name=Example&amp;type=domain&amp;rule=block&amp;url=https%3A//firewall.netpatch.co/domain/example.txt</a> </p>
+<h2 id="ipdomain-groups-for-netpatch-firewall">IP/Domain Groups for Netpatch Firewall<a class="headerlink" href="#ipdomain-groups-for-netpatch-firewall" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/netpatch/groups_for_netpatch_firewall">https://github.com/netpatch/groups_for_netpatch_firewall</a></p>
+          <aside class="copyright" role="note">
+              &nbsp;
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href=".." title="Home">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Home
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../questions/" title="Questions">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Questions
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = '';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        /* General initialization */
+        ga('create', 'UA-89301434-1', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+        /* Track outbound links */
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+        /* Register handler to log search on blur */
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
+    
+  </body>
+</html>

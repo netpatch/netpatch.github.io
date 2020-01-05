@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://firewall.netpatch.co/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://firewall.netpatch.co/rules/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://firewall.netpatch.co/questions/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://firewall.netpatch.co/policy/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
