@@ -138,7 +138,7 @@
         <strong>
           NetPatch Firewall
           <span class="version">
-            v0.16
+            v0.17
           </span>
         </strong>
         
@@ -307,14 +307,16 @@ Each Group has a <strong>Priority</strong>, The higher the priority, the earlier
 <p>If no IP Group or Domain Group match, the default rule is used.<br />
 It can be set to <strong>direct, block, proxy</strong>.  </p>
 <h2 id="group-url-scheme">Group Url scheme<a class="headerlink" href="#group-url-scheme" title="Permanent link">#</a></h2>
-<pre class="code"><code>netpatch://firewall/list?name=*name*&amp;type=*type*&amp;rule=*rule*&amp;url=*group_url*</code></pre>
+<div class="code"><pre><span></span><span class="c">netpatch://firewall/list?name=*name*&amp;type=*type*&amp;rule=*rule*&amp;url=*group_url*</span>
+</pre></div>
 
 
 <p><em>type</em>: ip, domain<br />
 <em>rule</em>: direct, block, proxy</p>
 <p>The following examples, one is a IP Group url, the other is a Domain Group url.</p>
-<pre class="code"><code>netpatch://firewall/list?name=United%20States&amp;type=ip&amp;rule=proxy&amp;url=https%3A//example.com/ips/US.txt
-netpatch://firewall/list?name=Blocks%20domains&amp;type=domain&amp;rule=block&amp;url=https%3A//example.org/blocks.txt  </code></pre>
+<div class="code"><pre><span></span><span class="c">netpatch://firewall/list?name=United%20States&amp;type=ip&amp;rule=proxy&amp;url=https%3A//example.com/ips/US.txt</span>
+<span class="c">netpatch://firewall/list?name=Blocks%20domains&amp;type=domain&amp;rule=block&amp;url=https%3A//example.org/blocks.txt  </span>
+</pre></div>
 
 
 <p>NetPatch Firewall will handle those links on devices with NetPatch Firewall installed.  </p>
